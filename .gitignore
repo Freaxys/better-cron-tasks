@@ -3,3 +3,4 @@ lib
 out
 .vscode-test/
 *.vsix
+.vscode/tasks.json
