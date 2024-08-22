@@ -2,7 +2,7 @@
 	"name": "better-cron-tasks",
 	"displayName": "Better Cron Tasks",
 	"description": "VSCode Task Scheduler",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"author": {
 		"name": "Michal Posieczek",
 		"email": "micposi90@gmail.com"
