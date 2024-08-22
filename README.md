@@ -27,7 +27,7 @@ In your settings.json:
 
 ## Debugging
 
-The extension always prints out debug information into the channel `Cron Tasks` of the panel `Output` (menu: `View` / `Output`).
+The extension always prints out debug information into the channel `Better Cron Tasks` of the panel `Output` (menu: `View` / `Output`).
 
 But if the property `cronTasks.debug` (`false` by default) is `true` or `"on"`, the extension will bring that channel to focus.
 

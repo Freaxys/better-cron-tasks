@@ -66,7 +66,7 @@
 	"contributes": {
 		"commands": [],
 		"configuration": {
-			"title": "Cron Tasks",
+			"title": "Better Cron Tasks",
 			"properties": {
 				"cronTasks.debug": {
 					"description": "Output debug logs",

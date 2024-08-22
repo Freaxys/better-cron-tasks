@@ -44,7 +44,7 @@ async function showWhatsNewMessage(version: string) {
 	];
 
 	const result = await vscode.window.showInformationMessage(
-		`Cron Tasks has been updated to v${version} — check out what's new!`,
+		`Better Cron Tasks has been updated to v${version} — check out what's new!`,
 		...actions
 	);
 

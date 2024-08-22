@@ -64,7 +64,7 @@ export class Scheduler {
 			`[new-task](${
 				task.uuid
 			}) pattern: ${pattern}, command: ${command}, next: ${
-				next ? next.toISOString() : "-no-"
+				next ? next.toLocaleString() : "-no-"
 			}`
 		);
 
@@ -155,7 +155,8 @@ export class Scheduler {
 	public setup(config: vscode.WorkspaceConfiguration): this {
 		// {{{
 		if (!this._channel) {
-			this._channel = vscode.window.createOutputChannel("Cron Tasks");
+			this._channel =
+				vscode.window.createOutputChannel("Better Cron Tasks");
 		}
 
 		const debug = config.get<boolean | string>("debug");
