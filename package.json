@@ -27,7 +27,7 @@
 		"commit": "cz",
 		"compile": "tsc -p src",
 		"lint": "xo",
-		"package": "rm -f *.vsix && vsce package",
+		"package": "del *.vsix && vsce package",
 		"prepare": "husky install; fixpack || true",
 		"release": "release-it",
 		"vscode:prepublish": "npm run compile && npm run bundle",
