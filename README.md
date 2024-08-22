@@ -1,7 +1,7 @@
 # Better Cron Tasks
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/zokugun.cron-tasks?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=zokugun.cron-tasks)
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/Freaxys.better-cron-tasks?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=Freaxys.better-cron-tasks)
 
 Based on the [Cron Tasks](https://github.com/zokugun/vscode-cron)
 
