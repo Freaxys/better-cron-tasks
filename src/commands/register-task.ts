@@ -1,4 +1,4 @@
-import { Scheduler, TaskKind } from '../scheduler';
+import { Scheduler, TaskKind } from "../scheduler";
 
 export async function registerTask(at: string, run: string): Promise<string> {
 	const scheduler = Scheduler.get();
