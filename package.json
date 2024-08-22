@@ -1,24 +1,24 @@
 {
-	"name": "cron-tasks",
-	"displayName": "Cron Tasks",
-	"description": "Easily schedule your tasks",
-	"version": "0.1.2",
+	"name": "better-cron-tasks",
+	"displayName": "Better Cron Tasks",
+	"description": "VSCode Task Scheduler",
+	"version": "0.1.3",
 	"author": {
-		"name": "Baptiste Augrain",
-		"email": "daiyam@zokugun.org"
+		"name": "Michal Posieczek",
+		"email": "micposi90@gmail.com"
 	},
-	"publisher": "zokugun",
+	"publisher": "Freaxys",
 	"license": "MIT",
-	"homepage": "https://github.com/zokugun/vscode-cron",
+	"homepage": "https://github.com/Freaxys/better-cron-tasks",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/zokugun/vscode-cron.git"
+		"url": "https://github.com/Freaxys/better-cron-tasks.git"
 	},
 	"bugs": {
-		"url": "https://github.com/zokugun/vscode-cron/issues"
+		"url": "https://github.com/Freaxys/better-cron-tasks/issues"
 	},
 	"engines": {
-		"vscode": "^1.23.0"
+		"vscode": "^1.92.2"
 	},
 	"main": "./lib/index.js",
 	"browser": "./lib/index.js",
