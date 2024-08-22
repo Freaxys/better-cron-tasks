@@ -12,6 +12,7 @@ const VERSION_KEY = "version";
 type Task = {
 	at: string;
 	run: string;
+	args?: string[];
 };
 
 function setup(): void {
@@ -26,6 +27,7 @@ function setup(): void {
 			kind: TaskKind.Config,
 			pattern: at,
 			command: run,
+			args,
 		});
 	}
 } // }}}

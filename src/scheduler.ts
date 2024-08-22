@@ -9,6 +9,7 @@ export type Task = {
 	kind: TaskKind;
 	pattern: string;
 	uuid: string;
+	args?: string[];
 };
 
 export enum TaskKind {
@@ -27,7 +28,18 @@ export class Scheduler {
 		return $instance;
 	} // }}}
 
-	public addTask({ kind, pattern, command }: { kind: TaskKind; pattern: string; command: string }): string { // {{{
+	public addTask({
+		kind,
+		pattern,
+		command,
+		args,
+	}: {
+		kind: TaskKind;
+		pattern: string;
+		command: string;
+		args?: string[];
+	}): string {
+		// {{{
 		const uuid = uuidv4();
 		const cron = new Cron(pattern);
 		const task: Task = {
@@ -36,6 +48,7 @@ export class Scheduler {
 			command,
 			cron,
 			uuid,
+			args,
 		};
 
 		cron.schedule(async () => this.run(task));
@@ -124,8 +137,8 @@ export class Scheduler {
 							...task.args
 						);
 					} else {
-					await vscode.commands.executeCommand(task.command);
-				}
+						await vscode.commands.executeCommand(task.command);
+					}
 				} catch (error: unknown) {
 					this._channel.appendLine(`[error] ${String(error)}`);
 				}
